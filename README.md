@@ -1,205 +1,205 @@
-# iOS 26 液态玻璃效果演示
+# iOS 26 Liquid Glass Effect Demo
 
-## 项目概述
+## Project Overview
 
-这个项目是一个交互式的HTML/CSS/JavaScript演示，旨在展示和解释iOS 26中引入的"液态玻璃"（Liquid Glass）视觉效果特性。
+This project is an interactive HTML/CSS/JavaScript demonstration designed to showcase and explain the "Liquid Glass" visual effect feature introduced in iOS 26.
 
-## 什么是液态玻璃？
+## What is Liquid Glass?
 
-液态玻璃是iOS 26的一项突破性视觉技术，它结合了以下核心特性：
+Liquid Glass is a breakthrough visual technology in iOS 26 that combines the following core features:
 
-### 主要特征
+### Key Features
 
-1. **玻璃形态效果 (Glass Morphism)**
-   - 半透明背景
-   - 背景模糊处理
-   - 细微的边框高光
-   - 深度感和层次感
+1. **Glass Morphism Effects**
+   - Semi-transparent backgrounds
+   - Background blur processing
+   - Subtle border highlights
+   - Depth and layering effects
 
-2. **液态动画效果**
-   - 流体般的过渡动画
-   - 涟漪效果
-   - 波浪运动
-   - 形态变换
+2. **Liquid Animation Effects**
+   - Fluid-like transition animations
+   - Ripple effects
+   - Wave motion
+   - Shape transformation
 
-3. **交互响应**
-   - 鼠标/触摸反馈
-   - 实时变形
-   - 动态透明度变化
-   - 视差效果
+3. **Interactive Response**
+   - Mouse/touch feedback
+   - Real-time deformation
+   - Dynamic transparency changes
+   - Parallax effects
 
-## 技术实现
+## Technical Implementation
 
-### CSS 技术
-- `backdrop-filter`: 实现背景模糊效果
-- `linear-gradient`: 创建玻璃质感
-- `animation` 和 `@keyframes`: 实现流畅动画
-- `transform`: 3D变换和透视效果
-- `filter`: 模糊和色彩调整
+### CSS Technologies
+- `backdrop-filter`: Implements background blur effects
+- `linear-gradient`: Creates glass texture
+- `animation` and `@keyframes`: Implements smooth animations
+- `transform`: 3D transformations and perspective effects
+- `filter`: Blur and color adjustments
 
-### JavaScript 功能
-- 交互式涟漪生成
-- 鼠标跟随效果
-- 幻灯片导航系统
-- 动态动画控制
-- 粒子效果系统
+### JavaScript Features
+- Interactive ripple generation
+- Mouse following effects
+- Slide navigation system
+- Dynamic animation control
+- Particle effect system
 
-### 响应式设计
-- 移动设备适配
-- 触摸事件支持
-- 自适应布局
-- 性能优化
+### Responsive Design
+- Mobile device adaptation
+- Touch event support
+- Adaptive layout
+- Performance optimization
 
-## 文件结构
+## File Structure
 
 ```
 ios26-liquid-glass-demo/
-├── index.html          # 主HTML文件
-├── styles.css          # 样式表
-├── script.js           # JavaScript交互逻辑
-└── README.md           # 项目说明
+├── index.html          # Main HTML file
+├── styles.css          # Stylesheet
+├── script.js           # JavaScript interaction logic
+└── README.md           # Project description
 ```
 
-## 使用方法
+## Usage Methods
 
-1. **本地运行**
+1. **Local Running**
    ```bash
-   # 直接在浏览器中打开index.html
+   # Open index.html directly in browser
    open index.html
    ```
 
-2. **在线访问**
-   - 将文件上传到任何Web服务器
-   - 或通过GitHub Pages托管
+2. **Online Access**
+   - Upload files to any web server
+   - Or host through GitHub Pages
 
-## 演示内容
+## Demo Content
 
-### 第1页：介绍
-- 液态玻璃概念说明
-- 基础演示元素
-- 浮动动画效果
+### Page 1: Introduction
+- Liquid glass concept explanation
+- Basic demo elements
+- Floating animation effects
 
-### 第2页：基础效果
-- 透明度演示
-- 背景模糊效果
-- 边框高光效果
-- 悬停交互
+### Page 2: Basic Effects
+- Transparency demonstration
+- Background blur effects
+- Border highlight effects
+- Hover interactions
 
-### 第3页：交互演示
-- 鼠标跟随效果
-- 涟漪生成
-- 液态表面变形
-- 流动切换控制
+### Page 3: Interactive Demo
+- Mouse following effects
+- Ripple generation
+- Liquid surface deformation
+- Flow switching controls
 
-### 第4页：动画展示
-- 液态流动动画
-- 玻璃形态变换
-- 光线折射效果
-- 循环动画演示
+### Page 4: Animation Showcase
+- Liquid flow animations
+- Glass morph transformations
+- Light refraction effects
+- Loop animation demonstrations
 
-### 第5页：实际应用
-- 控制面板设计
-- 通知中心界面
-- 应用切换效果
-- 实际使用场景
+### Page 5: Practical Applications
+- Control panel design
+- Notification center interface
+- App switching effects
+- Real-world usage scenarios
 
-## 交互控制
+## Interactive Controls
 
-### 导航方式
-- **顶部导航栏**: 点击直接跳转到对应页面
-- **左右箭头**: 上一页/下一页切换
-- **键盘控制**: 左右方向键导航
+### Navigation Methods
+- **Top Navigation Bar**: Click to jump directly to corresponding page
+- **Left/Right Arrows**: Previous/Next page switching
+- **Keyboard Control**: Left/Right arrow keys navigation
 
-### 交互功能
-- **鼠标移动**: 液态表面跟随变形
-- **点击/触摸**: 生成涟漪效果
-- **按钮控制**: 创建随机涟漪、切换流动状态
+### Interactive Features
+- **Mouse Movement**: Liquid surface follows deformation
+- **Click/Touch**: Generate ripple effects
+- **Button Control**: Create random ripples, toggle flow state
 
-## 技术亮点
+## Technical Highlights
 
-### 1. 高性能动画
-- 使用CSS3硬件加速
-- 优化的重绘和回流
-- 节流和防抖处理
+### 1. High-Performance Animation
+- Uses CSS3 hardware acceleration
+- Optimized repaints and reflows
+- Throttling and debouncing processing
 
-### 2. 真实感效果
-- 多层玻璃叠加
-- 动态光影变化
-- 物理模拟动画
+### 2. Realistic Effects
+- Multi-layer glass overlay
+- Dynamic light and shadow changes
+- Physics simulation animations
 
-### 3. 无障碍设计
-- 键盘导航支持
-- 清晰的视觉反馈
-- 响应式布局
+### 3. Accessibility Design
+- Keyboard navigation support
+- Clear visual feedback
+- Responsive layout
 
-## 浏览器兼容性
+## Browser Compatibility
 
-- **Chrome**: 90+ (推荐)
+- **Chrome**: 90+ (Recommended)
 - **Safari**: 14+
 - **Firefox**: 88+
 - **Edge**: 90+
 
-> 注意：`backdrop-filter`属性在某些浏览器中可能需要启用实验性功能
+> Note: The `backdrop-filter` property may require enabling experimental features in some browsers
 
-## 性能优化建议
+## Performance Optimization Suggestions
 
-1. **移动设备**: 减少同时运行的动画数量
-2. **低性能设备**: 禁用粒子效果
-3. **电池优化**: 暂停后台标签页的动画
+1. **Mobile Devices**: Reduce the number of simultaneous animations
+2. **Low-Performance Devices**: Disable particle effects
+3. **Battery Optimization**: Pause animations in background tabs
 
-## 扩展功能
+## Extension Features
 
-可以通过以下方式扩展此演示：
+This demo can be extended through the following methods:
 
-1. **添加更多动画效果**
-   - 玻璃破碎效果
-   - 液体滴落动画
-   - 彩虹折射效果
+1. **Add More Animation Effects**
+   - Glass shattering effects
+   - Liquid dripping animations
+   - Rainbow refraction effects
 
-2. **增强交互性**
-   - 多点触控支持
-   - 手势识别
-   - 声音反馈
+2. **Enhanced Interactivity**
+   - Multi-touch support
+   - Gesture recognition
+   - Sound feedback
 
-3. **实际应用集成**
-   - 真实UI组件
-   - 数据可视化
-   - 游戏界面
+3. **Real-World Application Integration**
+   - Real UI components
+   - Data visualization
+   - Game interfaces
 
-## 学习价值
+## Learning Value
 
-通过这个项目，你可以学习到：
+Through this project, you can learn:
 
-- 现代CSS高级特性
-- JavaScript动画编程
-- 交互设计原理
-- 性能优化技巧
-- 响应式开发
+- Modern CSS advanced features
+- JavaScript animation programming
+- Interactive design principles
+- Performance optimization techniques
+- Responsive development
 
-## 相关技术
+## Related Technologies
 
-- **CSS Glass Morphism**: 玻璃形态设计趋势
-- **Web Animations API**: 高级动画控制
-- **Canvas API**: 2D图形渲染
-- **WebGL**: 3D图形加速
+- **CSS Glass Morphism**: Glass morphism design trend
+- **Web Animations API**: Advanced animation control
+- **Canvas API**: 2D graphics rendering
+- **WebGL**: 3D graphics acceleration
 
-## 贡献和改进
+## Contributions and Improvements
 
-欢迎提交Issue和Pull Request来改进这个项目。一些可能的改进方向：
+Issues and Pull Requests are welcome to improve this project. Some possible improvement directions:
 
-- 添加更多交互效果
-- 优化移动端体验
-- 增加音效支持
-- 添加更多实际应用示例
+- Add more interactive effects
+- Optimize mobile experience
+- Add sound support
+- Add more real-world application examples
 
-## 许可证
+## License
 
-MIT License - 详见 [LICENSE](LICENSE) 文件
+MIT License - See [LICENSE](LICENSE) file for details
 
-## 作者
+## Author
 
-Kilo Code - AI编程助手
+Kilo Code - AI Programming Assistant
 
 ---
 
-**享受探索iOS 26液态玻璃的奇妙世界！**
+**Enjoy exploring the wonderful world of iOS 26 Liquid Glass!**
