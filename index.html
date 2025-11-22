@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS 26 液态玻璃效果演示</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- 导航栏 -->
+        <nav class="nav-bar">
+            <div class="nav-item active" data-slide="0">介绍</div>
+            <div class="nav-item" data-slide="1">基础效果</div>
+            <div class="nav-item" data-slide="2">交互演示</div>
+            <div class="nav-item" data-slide="3">动画效果</div>
+            <div class="nav-item" data-slide="4">实际应用</div>
+            <div class="nav-item" data-slide="5">火车票查询</div>
+        </nav>
+
+        <!-- 幻灯片容器 -->
+        <div class="slides-container">
+            <!-- 幻灯片1: 介绍 -->
+            <div class="slide active" id="slide-0">
+                <div class="slide-content">
+                    <h1 class="main-title">iOS 26 液态玻璃</h1>
+                    <h2 class="subtitle">革命性的视觉体验</h2>
+                    <div class="intro-text">
+                        <p>液态玻璃是iOS 26引入的一项突破性视觉技术，它模拟了真实玻璃的物理特性，创造出令人惊艳的透明、折射和流动效果。</p>
+                        <p>这种效果不仅美观，还能提供更直观的用户界面交互体验。</p>
+                    </div>
+                    <div class="liquid-glass-demo intro-demo">
+                        <div class="glass-element"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 幻灯片2: 基础效果 -->
+            <div class="slide" id="slide-1">
+                <div class="slide-content">
+                    <h2>基础玻璃效果</h2>
+                    <div class="effects-grid">
+                        <div class="effect-card">
+                            <h3>透明度</h3>
+                            <div class="glass-demo transparency-demo">
+                                <div class="glass-box">透明玻璃</div>
+                            </div>
+                        </div>
+                        <div class="effect-card">
+                            <h3>模糊背景</h3>
+                            <div class="glass-demo blur-demo">
+                                <div class="background-pattern"></div>
+                                <div class="glass-box">模糊效果</div>
+                            </div>
+                        </div>
+                        <div class="effect-card">
+                            <h3>边框高光</h3>
+                            <div class="glass-demo border-demo">
+                                <div class="glass-box">高光边框</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 幻灯片3: 交互演示 -->
+            <div class="slide" id="slide-2">
+                <div class="slide-content">
+                    <h2>交互式液态效果</h2>
+                    <div class="interactive-demo">
+                        <p>移动鼠标或触摸屏幕，观察液态玻璃的响应效果</p>
+                        <div class="liquid-container">
+                            <div class="liquid-surface"></div>
+                            <div class="ripple-container"></div>
+                        </div>
+                        <div class="controls">
+                            <button class="control-btn" id="createRipple">创建涟漪</button>
+                            <button class="control-btn" id="toggleFlow">切换流动</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 幻灯片4: 动画效果 -->
+            <div class="slide" id="slide-3">
+                <div class="slide-content">
+                    <h2>动画效果展示</h2>
+                    <div class="animations-showcase">
+                        <div class="animation-item">
+                            <h3>液态流动</h3>
+                            <div class="flow-animation">
+                                <div class="liquid-stream"></div>
+                            </div>
+                        </div>
+                        <div class="animation-item">
+                            <h3>玻璃变形</h3>
+                            <div class="morph-animation">
+                                <div class="morphing-glass"></div>
+                            </div>
+                        </div>
+                        <div class="animation-item">
+                            <h3>折射效果</h3>
+                            <div class="refraction-animation">
+                                <div class="refracting-glass"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 幻灯片5: 实际应用 -->
+            <div class="slide" id="slide-4">
+                <div class="slide-content">
+                    <h2>实际应用场景</h2>
+                    <div class="applications-grid">
+                        <div class="app-demo">
+                            <h3>控制面板</h3>
+                            <div class="control-panel-demo">
+                                <div class="panel-glass">
+                                    <div class="panel-item">设置</div>
+                                    <div class="panel-item">亮度</div>
+                                    <div class="panel-item">音量</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-demo">
+                            <h3>通知中心</h3>
+                            <div class="notification-demo">
+                                <div class="notification-glass">
+                                    <div class="notification">新消息</div>
+                                    <div class="notification">系统更新</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-demo">
+                            <h3>应用切换</h3>
+                            <div class="app-switcher-demo">
+                                <div class="app-preview">
+                                    <div class="app-card">应用1</div>
+                                    <div class="app-card">应用2</div>
+                                    <div class="app-card">应用3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 控制按钮 -->
+        <div class="controls-bar">
+            <button class="control-btn" id="prevBtn">上一页</button>
+            <span class="slide-counter">1 / 5</span>
+            <button class="control-btn" id="nextBtn">下一页</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

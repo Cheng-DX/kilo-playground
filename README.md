@@ -1,65 +1,205 @@
-# Kilo Playground
+# iOS 26 液态玻璃效果演示
 
-A development playground for experimenting with code and projects.
+## 项目概述
 
-## Description
+这个项目是一个交互式的HTML/CSS/JavaScript演示，旨在展示和解释iOS 26中引入的"液态玻璃"（Liquid Glass）视觉效果特性。
 
-This repository serves as a development playground where various coding experiments, projects, and learning exercises are conducted. It's designed to be a flexible workspace for testing ideas, implementing features, and exploring different programming concepts.
+## 什么是液态玻璃？
 
-## Project Structure
+液态玻璃是iOS 26的一项突破性视觉技术，它结合了以下核心特性：
+
+### 主要特征
+
+1. **玻璃形态效果 (Glass Morphism)**
+   - 半透明背景
+   - 背景模糊处理
+   - 细微的边框高光
+   - 深度感和层次感
+
+2. **液态动画效果**
+   - 流体般的过渡动画
+   - 涟漪效果
+   - 波浪运动
+   - 形态变换
+
+3. **交互响应**
+   - 鼠标/触摸反馈
+   - 实时变形
+   - 动态透明度变化
+   - 视差效果
+
+## 技术实现
+
+### CSS 技术
+- `backdrop-filter`: 实现背景模糊效果
+- `linear-gradient`: 创建玻璃质感
+- `animation` 和 `@keyframes`: 实现流畅动画
+- `transform`: 3D变换和透视效果
+- `filter`: 模糊和色彩调整
+
+### JavaScript 功能
+- 交互式涟漪生成
+- 鼠标跟随效果
+- 幻灯片导航系统
+- 动态动画控制
+- 粒子效果系统
+
+### 响应式设计
+- 移动设备适配
+- 触摸事件支持
+- 自适应布局
+- 性能优化
+
+## 文件结构
 
 ```
-kilo-playground/
-├── main.txt          # Main project file
-├── .logs/           # Log files directory
-└── README.md        # This file
+ios26-liquid-glass-demo/
+├── index.html          # 主HTML文件
+├── styles.css          # 样式表
+├── script.js           # JavaScript交互逻辑
+└── README.md           # 项目说明
 ```
 
-## Getting Started
+## 使用方法
 
-### Prerequisites
+1. **本地运行**
+   ```bash
+   # 直接在浏览器中打开index.html
+   open index.html
+   ```
 
-- Git installed on your system
-- Text editor or IDE of your choice
+2. **在线访问**
+   - 将文件上传到任何Web服务器
+   - 或通过GitHub Pages托管
 
-### Installation
+## 演示内容
 
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/kilo-playground.git
-```
+### 第1页：介绍
+- 液态玻璃概念说明
+- 基础演示元素
+- 浮动动画效果
 
-2. Navigate to the project directory:
-```bash
-cd kilo-playground
-```
+### 第2页：基础效果
+- 透明度演示
+- 背景模糊效果
+- 边框高光效果
+- 悬停交互
 
-3. Start exploring the codebase!
+### 第3页：交互演示
+- 鼠标跟随效果
+- 涟漪生成
+- 液态表面变形
+- 流动切换控制
 
-## Usage
+### 第4页：动画展示
+- 液态流动动画
+- 玻璃形态变换
+- 光线折射效果
+- 循环动画演示
 
-This playground is designed for experimentation. Feel free to:
-- Add new files and directories
-- Modify existing code
-- Test different programming concepts
-- Practice version control with Git
+### 第5页：实际应用
+- 控制面板设计
+- 通知中心界面
+- 应用切换效果
+- 实际使用场景
 
-## Contributing
+## 交互控制
 
-Contributions are welcome! Feel free to:
-- Fork the repository
-- Create a feature branch
-- Make your changes
-- Submit a pull request
+### 导航方式
+- **顶部导航栏**: 点击直接跳转到对应页面
+- **左右箭头**: 上一页/下一页切换
+- **键盘控制**: 左右方向键导航
 
-## License
+### 交互功能
+- **鼠标移动**: 液态表面跟随变形
+- **点击/触摸**: 生成涟漪效果
+- **按钮控制**: 创建随机涟漪、切换流动状态
 
-This project is open source and available under the [MIT License](LICENSE).
+## 技术亮点
 
-## Contact
+### 1. 高性能动画
+- 使用CSS3硬件加速
+- 优化的重绘和回流
+- 节流和防抖处理
 
-For questions or suggestions, please open an issue in this repository.
+### 2. 真实感效果
+- 多层玻璃叠加
+- 动态光影变化
+- 物理模拟动画
 
-## Development Status
+### 3. 无障碍设计
+- 键盘导航支持
+- 清晰的视觉反馈
+- 响应式布局
 
-🚧 **Active Development** - This project is currently under active development and experimentation.
+## 浏览器兼容性
+
+- **Chrome**: 90+ (推荐)
+- **Safari**: 14+
+- **Firefox**: 88+
+- **Edge**: 90+
+
+> 注意：`backdrop-filter`属性在某些浏览器中可能需要启用实验性功能
+
+## 性能优化建议
+
+1. **移动设备**: 减少同时运行的动画数量
+2. **低性能设备**: 禁用粒子效果
+3. **电池优化**: 暂停后台标签页的动画
+
+## 扩展功能
+
+可以通过以下方式扩展此演示：
+
+1. **添加更多动画效果**
+   - 玻璃破碎效果
+   - 液体滴落动画
+   - 彩虹折射效果
+
+2. **增强交互性**
+   - 多点触控支持
+   - 手势识别
+   - 声音反馈
+
+3. **实际应用集成**
+   - 真实UI组件
+   - 数据可视化
+   - 游戏界面
+
+## 学习价值
+
+通过这个项目，你可以学习到：
+
+- 现代CSS高级特性
+- JavaScript动画编程
+- 交互设计原理
+- 性能优化技巧
+- 响应式开发
+
+## 相关技术
+
+- **CSS Glass Morphism**: 玻璃形态设计趋势
+- **Web Animations API**: 高级动画控制
+- **Canvas API**: 2D图形渲染
+- **WebGL**: 3D图形加速
+
+## 贡献和改进
+
+欢迎提交Issue和Pull Request来改进这个项目。一些可能的改进方向：
+
+- 添加更多交互效果
+- 优化移动端体验
+- 增加音效支持
+- 添加更多实际应用示例
+
+## 许可证
+
+MIT License - 详见 [LICENSE](LICENSE) 文件
+
+## 作者
+
+Kilo Code - AI编程助手
+
+---
+
+**享受探索iOS 26液态玻璃的奇妙世界！**
